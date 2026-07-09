@@ -100,7 +100,7 @@ export default function Home() {
       <section className="content">
         <header className="topbar">
           <div>
-            <p className="eyebrow">Dashboard</p>
+            <p className="eyebrow">Dashboard Git test</p>
             <h1>Good morning, Parduman</h1>
           </div>
           <div className="topbar-actions">
