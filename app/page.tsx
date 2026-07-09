@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div>
               <p className="eyebrow">Live activity</p>
-              <h2>Dancing dots are Here</h2>
+              <h2>Dancing dots are Here TEST TEXT </h2>
               <p>Orders, visitors, and campaign signals moving in real time.</p>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
             <div className="panel-header">
               <div>
                 <p className="eyebrow">Today</p>
-                <h2>Focus list</h2>
+                <h2>Focus list UPDATE CODE</h2>
               </div>
             </div>
             <div className="task-list">
