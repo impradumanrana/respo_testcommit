@@ -17,10 +17,4 @@ export default function RootLayout({
     </html>
   );
 }
-// some dummy comment ... some more comments
 
-// BAL: BLA BALK AAGYSD 
-// asdgahsd ashdgasd
-// hgdf asdf
-
-// asdasd chal ja bhai 

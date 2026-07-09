@@ -246,6 +246,91 @@ h2 {
   color: var(--danger);
 }
 
+.dancing-dots-section {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(280px, 1fr);
+  align-items: center;
+  gap: 20px;
+  min-height: 170px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(49, 120, 115, 0.1), transparent 45%),
+    var(--surface);
+  box-shadow: 0 16px 40px rgba(32, 45, 38, 0.06);
+  margin-bottom: 14px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.dots-copy {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.dots-copy .metric-icon {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+.dots-copy p:last-child {
+  max-width: 360px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.dancing-dots {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(12px, 1fr));
+  align-items: center;
+  gap: 12px;
+  min-height: 112px;
+  padding: 10px 0;
+}
+
+.dancing-dots span {
+  display: block;
+  width: clamp(10px, 1.6vw, 18px);
+  height: clamp(10px, 1.6vw, 18px);
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 12px 24px rgba(49, 120, 115, 0.22);
+  animation: dot-dance 1.25s ease-in-out infinite;
+}
+
+.dancing-dots span:nth-child(3n + 1) {
+  background: var(--accent-2);
+  animation-delay: -0.15s;
+}
+
+.dancing-dots span:nth-child(3n + 2) {
+  background: #6b7fd7;
+  animation-delay: -0.35s;
+}
+
+.dancing-dots span:nth-child(4n) {
+  animation-delay: -0.55s;
+}
+
+.dancing-dots span:nth-child(5n) {
+  animation-delay: -0.75s;
+}
+
+@keyframes dot-dance {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateY(18px) scale(0.82);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translateY(-18px) scale(1.1);
+  }
+}
+
 .main-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.8fr);
@@ -405,6 +490,10 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .dancing-dots-section {
+    grid-template-columns: 1fr;
+  }
+
   .chart-panel,
   .orders-panel {
     grid-column: 1 / -1;
@@ -429,6 +518,10 @@ h2 {
   .stats-grid,
   .main-grid {
     grid-template-columns: 1fr;
+  }
+
+  .dancing-dots {
+    grid-template-columns: repeat(8, minmax(12px, 1fr));
   }
 
   .sidebar {

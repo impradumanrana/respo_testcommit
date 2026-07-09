@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   CircleDollarSign,
   Download,
+  Activity,
   LineChart,
   Package,
   Search,
@@ -136,6 +137,24 @@ export default function Home() {
               </article>
             );
           })}
+        </section>
+
+        <section className="dancing-dots-section" aria-label="Live activity pulse">
+          <div className="dots-copy">
+            <div className="metric-icon">
+              <Activity size={20} />
+            </div>
+            <div>
+              <p className="eyebrow">Live activity</p>
+              <h2>Dancing dots</h2>
+              <p>Orders, visitors, and campaign signals moving in real time.</p>
+            </div>
+          </div>
+          <div className="dancing-dots" aria-hidden="true">
+            {Array.from({ length: 24 }).map((_, index) => (
+              <span key={index} />
+            ))}
+          </div>
         </section>
 
         <section className="main-grid">
