@@ -66,6 +66,7 @@ const tasks = [
   "Restock top-selling bundles",
 ];
 
+// My export funticon into it 
 export default function Home() {
   const maxRevenue = Math.max(...revenue);
 
