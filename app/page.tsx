@@ -91,7 +91,7 @@ export default function Home() {
           </a>
           <a className="nav-item" href="#">
             <Package size={18} />
-            Inventory
+            Inventory TEST 
           </a>
         </nav>
       </aside>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div>
               <p className="eyebrow">Live activity</p>
-              <h2>Dancing dots</h2>
+              <h2>Dancing dots are Here</h2>
               <p>Orders, visitors, and campaign signals moving in real time.</p>
             </div>
           </div>
