@@ -101,7 +101,7 @@ export default function Home() {
         <header className="topbar">
           <div>
             <p className="eyebrow">Dashboard Git test</p>
-            <h1>Good morning, Parduman</h1>
+            <h1>Good morning, Parduman. d</h1>
           </div>
           <div className="topbar-actions">
             <label className="search">
